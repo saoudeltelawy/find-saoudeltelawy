@@ -1,9 +1,141 @@
-$primary-color: #E31B6D;
-$secondary-color: #252934;
-$darkish-color: #1B242F;
-$border-color: #04C2C9;
+@import 'config';
 
-body{
-    background-color: $primary-color;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background();
+  background-color: $primary-color;
+  height: 100%;
+  margin: 0;
+//   On & Off fonts till confims
+//   font-family: "Raleway", sans-serif;
+font-family: 'Roboto', sans-serif;
+
+  color: #fff;
+  line-height: 1.5;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 5.5rem;
+    letter-spacing: -1px;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($dark-color, 2), 0.5);
+    display: inline-block;
+    width: 33%;  //On & Off
+    border-radius: 3px;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+// Main Content
+
+main {
+  padding: 4rem;
+  // height: 100%;
+  min-height: calc(100vh - 60px);
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
+
+
+
+
+// Contact Section 
+.contact-info .fa {
+  padding-right: 5px;
+}
+#contact p.text-muted {
+  color: $text-muted;
+  // text-shadow: 1px 3px 5px #FFF;
+  text-shadow:2px 2px 3px #1b242f;
+
+}
+
+#contact .form-control {
+  border: none;
+  border-bottom: 2px solid $border-color;
+  box-shadow: none;
+  font-size: 18px;
+  margin-top: 10px;
+  outline: none;
+  background-color: lighten($color: $primary-color, $amount: 2);
+  color: #fff;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  width: 80%;
+  border-radius: 3px;
+}
+
+#contact .form-control::placeholder {
+    color: rgba(lighten($border-color, 2), 0.1);
+}
+
+#contact .form-control:focus {
+  border-bottom-color: $border-color;
+}
+
+#contact input {
+  height: 3rem;
+}
+
+#contact button#submit {
+  // background: $dark-color;
+  background-color: $border-color;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 50px;
+  margin-top: 24px;
+}
+
+#contact button#submit:hover {
+  background: $secondary-color;
+  color: #ffffff;
 }
 

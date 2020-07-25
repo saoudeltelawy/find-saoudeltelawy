@@ -1,0 +1,38 @@
+// For Variables & Mixins Only
+
+$primary-color: #1b242f;
+$secondary-color: #e31b6d;
+$dark-color: #252934;
+$border-color: #04c2c9;
+$text-muted: #6c757d;
+
+
+// Background
+$show-homepage-img: true;
+$homepage-img: url("../img/main bg/background5.jpg");
+$background-opacity: 0.8;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-homepage-img {
+    &#bg-img {
+      background: $homepage-img;
+      background-attachment: fixed;
+      background-size: cover;
+
+      .overlay {
+        // content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba($color: $primary-color, $alpha: $background-opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
