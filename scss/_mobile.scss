@@ -1,0 +1,218 @@
+// Widescreens MQ
+@include mediaXl {
+
+
+  #about {
+
+    .bio-image {
+      // width: 80%;
+      width: 16rem;
+      height: 14rem;
+      // height: 80%;
+    }
+  }
+
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  // Desktops & Laptops
+  @include mediaLg {
+
+
+    #about {
+
+      .bio-image {
+        // display: none;
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    main {
+      padding: 2rem;
+      #home h1 {
+        margin-top: 10vh;
+        
+      }
+  
+      .lg-heading {
+        margin-top:1rem;
+        font-size: 4.4rem;
+      }
+
+      h2.sm-heading{
+      width: 52%;
+      background: rgba($color: $dark-color, $alpha: 0.4);
+      //  display: block;
+        font-size: 1.3rem;
+      }
+
+      .icons a{
+        font-size: 1.2rem;
+
+      }
+    }
+  
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  // Tablets & Small Laptops
+  @include mediaMd {
+
+    #about {
+
+      .bio-image {
+        // display: none;
+        // width: 85%;
+        // height: 85%;
+        width: 16rem;
+        height: 14rem;
+      }
+    }
+    
+
+    #contact .form-control {
+      
+      width: 120%;
+      margin: 15px auto;
+      background-color: $primary-color;
+      
+      &#submit {
+        margin: 20px auto;  // On & Off
+      }
+
+   
+    }
+
+   
+
+    .anim-gradient{
+        font-size: 2.5rem;
+        margin-left: -110px;
+        font-weight: 500;
+    }
+    main {
+      align-items: center;
+      text-align: center;
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 5rem;
+        letter-spacing: 1px;
+
+      }
+
+      h2.sm-heading{
+         width: 100%;
+       display: block;
+        font-size: 1.7rem;
+      }
+
+      .icons a{
+        font-size: 1.4rem;
+
+      }
+    }
+  
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+  
+      &.show {
+        transform: translate3d(0, 0, 0);
+      opacity: 1; 
+
+      }
+    }
+  
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
+    }
+  
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+  
+      .portrait {
+        background: url('../img/personal/saud2.png');
+        width: 150px;
+        height: 150px;
+        background-size:contain;
+        object-fit: scale-down;
+      }
+    }
+  
+    .about-info {
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+  
+      grid-template-columns: 1fr;
+    }
+  
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  // Mobiles
+  @include mediaSm {
+
+
+
+
+
+    .anim-gradient{
+        font-size: 1.55rem;
+    }
+ 
+
+    main {
+      padding: 2rem;
+      #home h1 {
+        margin-top: 10vh;
+        
+      }
+  
+      .lg-heading {
+        margin-top:1rem;
+        font-size: 4.4rem;
+      }
+
+      h2.sm-heading{
+         width: 100%;
+       display: block;
+        font-size: 1.3rem;
+      }
+
+      .icons a{
+        font-size: 1.2rem;
+
+      }
+    }
+  
+    .projects {
+      grid-template-columns: 1fr;
+    }
+
+    h3.sm-heading, p.text-muted {
+        display: none !important;
+    }
+
+    #contact .form-control{
+        width: 100%;
+    }
+  }
+  
