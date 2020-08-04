@@ -32,3 +32,26 @@ function toggleMenu()
     showMenu = false;
   }
 }
+
+
+// Veno Box 
+$(document).ready(function(){
+  // $('.venobox').venobox(); 
+
+
+  // Hover (Projects)
+  $('.venobox').venobox({
+    framewidth : 'auto',                            // default: ''
+    frameheight: 'auto',                            // default: ''
+    border     : '3px',                             // default: '0'
+    bgcolor    : '#252934',                          // default: '#fff'
+    titleattr  : 'data-title',                       // default: 'title'
+    numeratio  : true,                               // default: false
+    infinigall : true,                               // default: false
+});
+
+
+});
+
+
+

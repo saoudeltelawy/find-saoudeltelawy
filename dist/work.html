@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Font Awesome  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
-    <!-- Google Fonts  Raleway Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap"
-      rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
-    <!-- On & Off  Roboto Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet">
+  <!-- Google Fonts  Raleway Font -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+
+  <!-- On & Off  Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fonts "Project Name" -->
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
+  <!-- BS 4- Tabs -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'/>
+  <!-- VenoBox Lib -->
+  <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+<!-- Hover.css Lib -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'/>
+  <!-- Img Hover Lib  -->
+  <link rel="stylesheet" href="css/imagehover.min.css ">
+
   <link rel="stylesheet" href="css/main.css">
   <title>View My Work</title>
+  <style>
+    a,a:hover{
+      text-decoration: none;
+    }
+
+    a.nav-item:hover{
+      color: #04c2c9 !important;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -31,12 +47,12 @@
     </div>
 
     <nav class="menu">
-  
+
       <div class="menu-branding">
         <div class="portrait image-grayscale-10"></div>
         <span class="m-1  anim-gradient">Saoud ElTelawy</span>
       </div>
-      
+
 
       <ul class="menu-nav">
         <li class="nav-item">
@@ -71,69 +87,530 @@
     <h2 class="sm-heading">
       Check out some of my projects...
     </h2>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project1.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+
+    <!-- Tabs  -->
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All </a>
+
+
+        <a class="nav-item nav-link" id="nav-live-tab" data-toggle="tab" href="#nav-live" role="tab" aria-controls="nav-live" aria-selected="false">Live</a>
+
+
+
+        <a class="nav-item nav-link" id="nav-pure-tab" data-toggle="tab" href="#nav-pure" role="tab" aria-controls="nav-pure" aria-selected="false">Pure CSS</a>
+
+
+       
+
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Javascript</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">PHP - Laravel</a>
+
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project2.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <!-- Start of all Projects  === All projects  -->
+        <div class="projects">
+          <div class="item">
+            <div class="triangle">
+              <span>LIVE</span>
+            </div>
+    
+            <!-- Img Hover Start  -->
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down ">
+              <img src="img/projects/fmproject.png" alt="Project">
+    
+              <figcaption>
+                <br>FM Travel
+                Project
+                <a href="https://www.fm-egypt.com/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+            <!-- Img Hover End  -->
+            </a>
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content">
+              <i class="fas fa-info-circle"></i> View Details
+    
+            </a>
+    
+    
+    
+    
+            <div id="inline-content" style="display:none;">
+              <h2 style="text-align: center; color: #e31b6d; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                FM Travel Agency Project</h2>
+              <img src="./img/projects/fmproject2.png" alt="" width="100%">
+              <h2 style="color: #04c2c9">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>HTML5</li>
+    
+              </ul>
+    
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://www.fm-egypt.com/" target="__blank">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+    
+            <!-- <a href="#" class="btn-dark">
+              <i class="fab fa-github"></i> Github
+            </a> -->
+          </div>
+    
+    
+    
+            <!-- Second Project  -->
+          <div class="item">
+            <div class="triangle">
+              <span>LIVE</span>
+            </div>
+    
+            <!-- Img Hover Start  -->
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/icleanproj.png" alt="Project">
+    
+              <figcaption>
+                <br>IClean Egypt 
+                Project
+                <a href="http://iclean.com.eg/en" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+            <!-- Img Hover End  -->
+            </a>
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content2">
+              <i class="fas fa-info-circle"></i> View Details
+    
+            </a>
+    
+    
+    
+    
+            <div id="inline-content2" style="display:none;">
+              <h2 style="text-align: center; color: #e31b6d; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                ICLean Project</h2>
+              <img src="./img/projects/icleanproj.png" alt="" width="100%">
+              <h2 style="color: #04c2c9">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>HTML5</li>
+    
+              </ul>
+    
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="http://iclean.com.eg/en" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+    
+            <!-- <a href="#" class="btn-dark">
+              <i class="fab fa-github"></i> Github
+            </a> -->
+          </div>
+    
+          <!-- 3rd Project  -->
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/stc.png" alt="Project">
+    
+              <figcaption>
+                <br>STC - Clone
+                <a href="https://stc-materlize.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content3">
+              <i class="fas fa-eye"></i> View Project
+    
+            </a>
+            <div id="inline-content3" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                STC - Clone</h2>
+              <img src="./img/projects/stc2.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Materlize Framework</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://stc-materlize.netlify.app/" target="__blank">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="#" target="__blank">View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+    
+    
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/cairoeat.png" alt="Project">
+    
+              <figcaption>
+                <br>Cairo Eat <br>-<br> Designed with &hearts;
+                <a href="https://cairo-eat.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content4">
+              <i class="fas fa-eye"></i> View Project
+    
+            </a>
+            <div id="inline-content4" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                Cairo Eat</h2>
+              <img src="./img/projects/cairoeat.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Bootstrap 4 Framework</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank">View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+    
+    
+    
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/cairoeat.png" alt="Project">
+    
+              <figcaption>
+                <br>Cairo Eat <br>-<br> Designed with &hearts;
+                <a href="https://cairo-eat.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content4">
+              <i class="fas fa-eye"></i> View Project
+    
+            </a>
+            <div id="inline-content4" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                Cairo Eat</h2>
+              <img src="./img/projects/cairoeat.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Bootstrap 4 Framework</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank">View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+    
+
+
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/my_news.png" alt="Project">
+    
+              <figcaption>
+                <br>Malaysia News App
+                <a href="https://malaysia-daily-news.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content6">
+              <i class="fas fa-eye"></i> View Details
+    
+            </a>
+            <div id="inline-content6" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                Malaysia News</h2>
+              <img src="./img/projects/my_news2.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>CSS Grid</li>
+                <li>Jquery</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank">View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+    
+    
+        </div>
+        <!-- End Of Projects   -->
+
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2e</div>
+
+ 
+
+
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          BAck End Projects  - PHP  -  Laravel
+
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project4.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
+
+      <div class="tab-pane fade" id="nav-live" role="tabpanel" aria-labelledby="nav-live-tab">
+        <div class="projects">
+          <div class="item">
+            <div class="triangle">
+              <span>LIVE</span>
+            </div>
+    
+            <!-- Img Hover Start  -->
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/fmproject.png" alt="Project">
+    
+              <figcaption>
+                <br>FM Travel
+                Project
+                <a href="https://www.fm-egypt.com/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+            <!-- Img Hover End  -->
+            </a>
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content">
+              <i class="fas fa-info-circle"></i> View Details
+    
+            </a>
+    
+    
+    
+    
+            <div id="inline-content" style="display:none;">
+              <h2 style="text-align: center; color: #e31b6d; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                FM Travel Agency Project</h2>
+              <img src="./img/projects/fmproject2.png" alt="" width="100%">
+              <h2 style="color: #04c2c9">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>HTML5</li>
+    
+              </ul>
+    
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://www.fm-egypt.com/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+    
+            <!-- <a href="#" class="btn-dark">
+              <i class="fab fa-github"></i> Github
+            </a> -->
+          </div>
+    
+    
+    
+            <!-- Second Project  -->
+          <div class="item">
+            <div class="triangle">
+              <span>LIVE</span>
+            </div>
+    
+            <!-- Img Hover Start  -->
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/icleanproj.png" alt="Project">
+    
+              <figcaption>
+                <br>IClean Egypt 
+                Project
+                <a href="http://iclean.com.eg/en" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+            <!-- Img Hover End  -->
+            </a>
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content2">
+              <i class="fas fa-info-circle"></i> View Details
+    
+            </a>
+    
+    
+    
+    
+            <div id="inline-content2" style="display:none;">
+              <h2 style="text-align: center; color: #e31b6d; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                ICLean Project</h2>
+              <img src="./img/projects/icleanproj.png" alt="" width="100%">
+              <h2 style="color: #04c2c9">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>HTML5</li>
+    
+              </ul>
+    
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="http://iclean.com.eg/en" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button>
+              </div>
+    
+            </div>
+    
+    
+    
+            <!-- <a href="#" class="btn-dark">
+              <i class="fab fa-github"></i> Github
+            </a> -->
+          </div>
+    
+    
+    
+        </div>
       </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
+
+      <div class="tab-pane fade" id="nav-pure" role="tabpanel" aria-labelledby="nav-pure-tab">Pure CSS</div>
+
+
+
+
     </div>
+    <!-- End Tabs  -->
+
   </main>
+
+
 
   <footer id="main-footer">
     Saoud ElTelawy &copy; 2020
   </footer>
 
+
+
+
+  <!-- Jquery  -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+  <!-- Venobox Lib  -->
+  <script type="text/javascript" src="js/venobox.min.js"></script>
+  <!-- BS - JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js'></script>
   <script src="js/main.js"></script>
 </body>
 
