@@ -35,6 +35,20 @@
       color: #04c2c9 !important;
     }
 
+    .disabled {
+      pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+
   </style>
 </head>
 
@@ -103,8 +117,11 @@
 
        
 
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Javascript</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Javascript - Jquery</a>
+        <a class="nav-item nav-link" id="nav-react-tab" data-toggle="tab" href="#nav-react" role="tab" aria-controls="nav-react" aria-selected="false">React-Js</a>
         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">PHP - Laravel</a>
+
+
 
       </div>
     </nav>
@@ -149,8 +166,10 @@
               <!-- <p style="color: navy;">HTML 5, CSS </p> -->
               <ul style="color: whitesmoke;">
                 <li>HTML5</li>
-                <li>CSS</li>
+                <li>SASS</li>
                 <li>HTML5</li>
+                <li>CSS</li>
+                
     
               </ul>
     
@@ -175,8 +194,6 @@
             </a> -->
           </div>
     
-    
-    
             <!-- Second Project  -->
           <div class="item">
             <div class="triangle">
@@ -185,7 +202,7 @@
     
             <!-- Img Hover Start  -->
             <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
-              <img src="img/projects/icleanproj.png" alt="Project">
+              <img src="img/projects/icleanproj.png" alt="Iclean Egypt Project">
     
               <figcaption>
                 <br>IClean Egypt 
@@ -211,7 +228,7 @@
               <h2 style="text-align: center; color: #e31b6d; background-color: #252934; font-weight: 300;padding: 0.8rem;">
                 ICLean Project</h2>
               <img src="./img/projects/icleanproj.png" alt="" width="100%">
-              <h2 style="color: #04c2c9">Techologies Used:</h2>
+              <h2 style="color: #04c2c9" class="tech_used">Techologies Used:</h2>
               <!-- <p style="color: navy;">HTML 5, CSS </p> -->
               <ul style="color: whitesmoke;">
                 <li>HTML5</li>
@@ -226,10 +243,15 @@
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
                   <a href="http://iclean.com.eg/en" target="__blank" class="veno_link">Visit Website</a></button>
     
-    
-                <button class="btn-dark"
+
+                  <!-- Github Orignal Button  -->
+                <!-- <button class="btn-dark"
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
-                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button>
+                  <a href="https://google.com" target="__blank"><i class="fab fa-github"></i> View Github</a></button> -->
+
+                  <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
               </div>
     
             </div>
@@ -248,7 +270,7 @@
               <img src="img/projects/stc.png" alt="Project">
     
               <figcaption>
-                <br>STC - Clone
+                <br>STC - Clone <br>Materialize Framework
                 <a href="https://stc-materlize.netlify.app/" target="__blank">
     
     
@@ -264,7 +286,7 @@
               <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
                 STC - Clone</h2>
               <img src="./img/projects/stc2.png" alt="" width="100%">
-              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
               <!-- <p style="color: navy;">HTML 5, CSS </p> -->
               <ul style="color: whitesmoke;">
                 <li>Materlize Framework</li>
@@ -278,9 +300,9 @@
                   <a href="https://stc-materlize.netlify.app/" target="__blank">Visit Website</a></button>
     
     
-                <button class="btn-dark"
+                  <button class="btn-dark disabled"
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
-                  <a href="#" target="__blank">View Github</a></button>
+                  View Github</button>
               </div>
     
             </div>
@@ -295,7 +317,7 @@
               <img src="img/projects/cairoeat.png" alt="Project">
     
               <figcaption>
-                <br>Cairo Eat <br>-<br> Designed with &hearts;
+                <br>Cairo Eat <br> Designed with &hearts;
                 <a href="https://cairo-eat.netlify.app/" target="__blank">
     
     
@@ -312,7 +334,7 @@
               <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
                 Cairo Eat</h2>
               <img src="./img/projects/cairoeat.png" alt="" width="100%">
-              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
               <!-- <p style="color: navy;">HTML 5, CSS </p> -->
               <ul style="color: whitesmoke;">
                 <li>Bootstrap 4 Framework</li>
@@ -325,10 +347,9 @@
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
                   <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
     
-    
-                <button class="btn-dark"
+                  <button class="btn-dark disabled"
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
-                  <a href="https://google.com" target="__blank">View Github</a></button>
+                  View Github</button>
               </div>
     
             </div>
@@ -336,56 +357,6 @@
     
           </div>
     
-    
-    
-          <div class="item">
-    
-            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
-              <img src="img/projects/cairoeat.png" alt="Project">
-    
-              <figcaption>
-                <br>Cairo Eat <br>-<br> Designed with &hearts;
-                <a href="https://cairo-eat.netlify.app/" target="__blank">
-    
-    
-              </figcaption>
-    
-            </figure>
-    
-    
-            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content4">
-              <i class="fas fa-eye"></i> View Project
-    
-            </a>
-            <div id="inline-content4" style="display:none;">
-              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
-                Cairo Eat</h2>
-              <img src="./img/projects/cairoeat.png" alt="" width="100%">
-              <h2 style="color: #e31b6d;">Techologies Used:</h2>
-              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
-              <ul style="color: whitesmoke;">
-                <li>Bootstrap 4 Framework</li>
-    
-    
-              </ul>
-    
-              <div style="display: flex;">
-                <button class="btn-dark"
-                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
-                  <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
-    
-    
-                <button class="btn-dark"
-                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
-                  <a href="https://google.com" target="__blank">View Github</a></button>
-              </div>
-    
-            </div>
-    
-    
-          </div>
-    
-
 
           <div class="item">
     
@@ -393,7 +364,7 @@
               <img src="img/projects/my_news.png" alt="Project">
     
               <figcaption>
-                <br>Malaysia News App
+                <br>Malaysia News App <br>CSS Grid
                 <a href="https://malaysia-daily-news.netlify.app/" target="__blank">
     
     
@@ -410,7 +381,7 @@
               <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
                 Malaysia News</h2>
               <img src="./img/projects/my_news2.png" alt="" width="100%">
-              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
               <!-- <p style="color: navy;">HTML 5, CSS </p> -->
               <ul style="color: whitesmoke;">
                 <li>CSS Grid</li>
@@ -425,9 +396,58 @@
                   <a href="https://cairo-eat.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
     
     
-                <button class="btn-dark"
+                  <button class="btn-dark disabled"
                   style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
-                  <a href="https://google.com" target="__blank">View Github</a></button>
+                  View Github</button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+
+
+
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/js_tools.png" alt="Project">
+    
+              <figcaption>
+                <br>Javascript Mini Projects
+                <a href="https://javascript-mini-projetcs.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content7">
+              <i class="fas fa-eye"></i> View Details
+    
+            </a>
+            <div id="inline-content7" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                JS Mini Projetcs</h2>
+              <img src="./img/projects/jsmini2.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>CSS Grid</li>
+                <li>Jquery</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://javascript-mini-projetcs.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+                  <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
               </div>
     
             </div>
@@ -435,20 +455,824 @@
     
           </div>
     
+
+          <!-- UI Color Project  -->
+          <div class="item">
     
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/uicolor.png" alt="Project">
+    
+              <figcaption>
+                <br>UI Color - Clone
+                <a href="https://uicolor-clone.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content8">
+              <i class="fas fa-eye"></i> View Details
+    
+            </a>
+            <div id="inline-content8" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                Javascript Basic Tools</h2>
+              <img src="./img/projects/uicolor2.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Javascript</li>
+                <li>Jquery</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://uicolor-clone.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                  <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+
+          <!-- W3School Project -->
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/w3school.png" alt="Project">
+    
+              <figcaption>
+                <br>W3schools.com - Clone
+                <a href="https://w3school-clone-saud.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content9">
+              <i class="fas fa-eye"></i> View Details
+    
+            </a>
+            <div id="inline-content9" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                W3schools.com - Clone </h2>
+              <img src="./img/projects/w3school2.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Javascript</li>
+                <li>Jquery</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://w3school-clone-saud.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                  <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+
+          <!-- METRO HOTEL Project  -->
+          <div class="item">
+    
+            <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+              <img src="img/projects/metro2.png" alt="Project">
+    
+              <figcaption>
+                <br>Metro Hotel Malaysia
+                <a href="https://metrohotel-kl.netlify.app/" target="__blank">
+    
+    
+              </figcaption>
+    
+            </figure>
+    
+    
+            <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content10">
+              <i class="fas fa-eye"></i> View Details
+    
+            </a>
+            <div id="inline-content10" style="display:none;">
+              <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+              Metro Hotel - Malaysia </h2>
+              <img src="./img/projects/metro3.png" alt="" width="100%">
+              <h2 style="color: #e31b6d;">Techologies Used:</h2>
+              <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+              <ul style="color: whitesmoke;">
+                <li>Javascript</li>
+                <li>Jquery</li>
+    
+    
+              </ul>
+    
+              <div style="display: flex;">
+                <button class="btn-dark"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                  <a href="https://metrohotel-kl.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+    
+    
+                  <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+
+
+
+            <!-- Daisy Flower Project  -->
+            <div class="item">
+    
+              <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                <img src="img/projects/daisy flower.png" alt="Project">
+      
+                <figcaption>
+                  <br>Daisy Flower Shop 
+                  <a href="https://daisy-flower-shop-eg.netlify.app/" target="__blank">
+      
+      
+                </figcaption>
+      
+              </figure>
+      
+      
+              <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content11">
+                <i class="fas fa-eye"></i> View Details
+      
+              </a>
+              <div id="inline-content11" style="display:none;">
+                <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                Daisy Flower Shop </h2>
+                <img src="./img/projects/daisy2.png" alt="" width="100%">
+                <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                <ul style="color: whitesmoke;">
+                  <li>Javascript</li>
+                  <li>Jquery</li>
+      
+      
+                </ul>
+      
+                <div style="display: flex;">
+                  <button class="btn-dark"
+                    style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                    <a href="https://daisy-flower-shop-eg.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+      
+      
+                    <button class="btn-dark disabled"
+                    style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                    View Github</button>
+                </div>
+      
+              </div>
+      
+      
+            </div>
+
+              <!-- Cima 4U Project -->
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/cima.png" alt="Project">
+        
+                  <figcaption>
+                    <br>Cima 4U Movies & Player Project 
+                    <a href="https://cima-movies-downloadandplayer.netlify.app/index2.html" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content12">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content12" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Cima 4U Watch & Play </h2>
+                  <img src="./img/projects/cima2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://cima-movies-downloadandplayer.netlify.app/index2.html" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <!-- Metallex Company  -->
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/metalex.png" alt="Project">
+        
+                  <figcaption>
+                    <br>Metalex Company NYC
+                    <a href="https://metalex-company-nyc.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content13">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content13" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Kallyas Metalex CO.</h2>
+                  <img src="./img/projects/metalex.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://metalex-company-nyc.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                  style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                  View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <!-- PataTap Company  -->
+
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/pata2.png" alt="Project">
+        
+                  <figcaption>
+                    <br>PataTap - Clone
+                    <a href="https://patatap-clone-saud.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content14">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content14" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Patatap - Clone</h2>
+                  <img src="./img/projects/patatap.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure Javascript</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://patatap-clone-saud.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <!-- The RGB Color Game  -->
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/colorgame.png" alt="Project">
+        
+                  <figcaption>
+                    <br>The RGB Color Game
+                    <a href="https://the-color-gameof-rgb.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content15">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content15" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  The Great RGB Color Matching Game </h2>
+                  <img src="./img/projects/colorgame2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure Javascript</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://the-color-gameof-rgb.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <!-- Mobily Stroe Project  -->
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/mobily.png" alt="Mobily Store Egypt">
+        
+                  <figcaption>
+                    <br>Mobily Store Egypt V1<br> PHP <br> <cite>Visit Now</cite>
+                    <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content18">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content18" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Mobily Store Egypt - Apple Products & Accessories </h2>
+                  <img src="./img/projects/mobily2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure PHP</li>
+                    <li>MYSQL DB</li>
+        
+        
+                  </ul>
+            
+                  <small style="color: #6c757d;">Note*:  This is Beta Version & the Dashboard, Cart with Pure PHP and many features to be added are In the Deployment Phase.</small>
+              
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <!-- F&K Restaurant Project  -->
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/fandk3.png" alt="Mobily Store Egypt">
+        
+                  <figcaption>
+                    <br>F&K Restaurant  <br>PHP <br> <cite>Visit Now</cite>
+                    <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content21">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content21" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                    Fork & Knife - Penang Finest Restaurant  </h2>
+                  <img src="./img/projects/fandk2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure PHP</li>
+                    <li>PHP Scripts </li>
+                    <li>CSS 3 </li>
+
+                  </ul>
+              
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark " 
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+
+              
         </div>
         <!-- End Of Projects   -->
-
+        <a href="#" id="arrow_top">
+          <i class="fas fa-arrow-up"></i> 
+        </a>
       </div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2e</div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <!-- Javascript "JS" Projects  2e-->
+            <div class="projects">
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/js_tools.png" alt="Project">
+        
+                  <figcaption>
+                    <br>Javascript Basic Tools
+                    <a href="https://javascript-mini-projetcs.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content7">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content7" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                    Javascript Mini Projetcs</h2>
+                  <img src="./img/projects/js_tools.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>CSS Grid</li>
+                    <li>Jquery</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://javascript-mini-projetcs.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/colorgame.png" alt="Project">
+        
+                  <figcaption>
+                    <br>The RGB Color Game
+                    <a href="https://the-color-gameof-rgb.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content15">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content15" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  The Great RGB Color Matching Game </h2>
+                  <img src="./img/projects/colorgame2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure Javascript</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://the-color-gameof-rgb.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+              
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/uicolor.png" alt="Project">
+        
+                  <figcaption>
+                    <br>UI Color - Clone
+                    <a href="https://uicolor-clone.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content8">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content8" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                    Javascript Basic Tools</h2>
+                  <img src="./img/projects/uicolor2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://uicolor-clone.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/pata2.png" alt="Project">
+        
+                  <figcaption>
+                    <br>PataTap - Clone
+                    <a href="https://patatap-clone-saud.netlify.app/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content14">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content14" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Patatap - Clone</h2>
+                  <img src="./img/projects/patatap.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure Javascript</li>
+        
+        
+                  </ul>
+        
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://patatap-clone-saud.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark disabled"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+
+              
+
+            </div>
+
+            <small>*More Pure JS Projects In Deployment Phase</small>
+      </div>
 
  
 
 
       <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          BAck End Projects  - PHP  -  Laravel
+          <!-- BAck End Projects  - PHP  -  Laravel -->
+            <div class="projects">
 
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/fandk3.png" alt="Mobily Store Egypt">
+        
+                  <figcaption>
+                    <br>F&K Restaurant  <br>PHP <br> <cite>Visit Now</cite>
+                    <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content21">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content21" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                    Fork & Knife - Penang Finest Restaurant  </h2>
+                  <img src="./img/projects/fandk2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure PHP</li>
+                    <li>PHP Scripts </li>
+                    <li>CSS 3 </li>
+
+                  </ul>
+              
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                      <button class="btn-dark " 
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      View Github</button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+              
+              <div class="item">
+    
+                <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                  <img src="img/projects/mobily.png" alt="Mobily Store Egypt">
+        
+                  <figcaption>
+                    <br>Mobily Store Egypt V1<br> PHP <br> <cite>Visit Now</cite>
+                    <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank">
+        
+        
+                  </figcaption>
+        
+                </figure>
+        
+        
+                <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content18">
+                  <i class="fas fa-eye"></i> View Details
+        
+                </a>
+                <div id="inline-content18" style="display:none;">
+                  <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                  Mobily Store Egypt - Apple Products & Accessories </h2>
+                  <img src="./img/projects/mobily2.png" alt="" width="100%">
+                  <h2 style="color: #e31b6d;" class="tech_used">Techologies Used:</h2>
+                  <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                  <ul style="color: whitesmoke;">
+                    <li>Pure PHP</li>
+                    <li>MYSQL DB</li>
+        
+        
+                  </ul>
+                  <small style="color: #6c757d;">Note*:  This is Beta Version & the Dashboard, Cart with Pure PHP and many features to be added are In the Deployment Phase</small>
+                  <div style="display: flex;">
+                    <button class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                      <a href="https://mobily-store-eg.000webhostapp.com/" target="__blank" class="veno_link">Visit Website</a></button>
+        
+        
+                    <button  class="btn-dark"
+                      style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                      <a href="https://google.com" target="__blank" >View Github</a></button>
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+            </div>
+            <small>
+              *Laravel E-commerce with Paymentgate, Online Courses Platform Projects are In Implementation Phase.
+
+            </small>
       </div>
+
+
+      <div class="tab-pane fade" id="nav-react" role="tabpanel" aria-labelledby="nav-react-tab">
+        <div class="projects">
+
+        </div>
+     <small>Coming Soon ...</small>
+
+    </div>
 
       <div class="tab-pane fade" id="nav-live" role="tabpanel" aria-labelledby="nav-live-tab">
         <div class="projects">
@@ -463,7 +1287,7 @@
     
               <figcaption>
                 <br>FM Travel
-                Project
+                Project <br>  <cite>Visit Now</cite>
                 <a href="https://www.fm-egypt.com/" target="__blank">
     
     
@@ -529,7 +1353,7 @@
     
               <figcaption>
                 <br>IClean Egypt 
-                Project
+                Project <br>  <cite>Visit Now</cite>
                 <a href="http://iclean.com.eg/en" target="__blank">
     
     
@@ -586,7 +1410,159 @@
         </div>
       </div>
 
-      <div class="tab-pane fade" id="nav-pure" role="tabpanel" aria-labelledby="nav-pure-tab">Pure CSS</div>
+      <div class="tab-pane fade" id="nav-pure" role="tabpanel" aria-labelledby="nav-pure-tab">
+            <!-- Pure CSS Projects  -->
+          <div class="projects">
+                   <!-- Cima 4U Project -->
+                   <div class="item">
+    
+                    <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                      <img src="img/projects/cima.png" alt="Project">
+            
+                      <figcaption>
+                        <br>Cima 4U Movies & Player Project <br>  <cite>Visit Now</cite>
+                        <a href="https://cima-movies-downloadandplayer.netlify.app/index2.html" target="__blank">
+            
+            
+                      </figcaption>
+            
+                    </figure>
+            
+            
+                    <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content12">
+                      <i class="fas fa-eye"></i> View Details
+            
+                    </a>
+                    <div id="inline-content12" style="display:none;">
+                      <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                      Cima 4U Watch & Play </h2>
+                      <img src="./img/projects/cima2.png" alt="" width="100%">
+                      <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                      <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                      <ul style="color: whitesmoke;">
+                        <li>Javascript</li>
+                        <li>Jquery</li>
+            
+            
+                      </ul>
+            
+                      <div style="display: flex;">
+                        <button class="btn-dark"
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                          <a href="https://cima-movies-downloadandplayer.netlify.app/index2.html" target="__blank" class="veno_link">Visit Website</a></button>
+            
+            
+                        <button class="btn-dark"
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                          <a href="https://google.com" target="__blank">View Github</a></button>
+                      </div>
+            
+                    </div>
+            
+            
+                  </div>
+    
+                  <!-- Metallex Company  -->
+                  <div class="item">
+        
+                    <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                      <img src="img/projects/metalex.png" alt="Project">
+            
+                      <figcaption>
+                        <br>Metalex Company NYC
+                        <a href="https://metalex-company-nyc.netlify.app/" target="__blank">
+            
+            
+                      </figcaption>
+            
+                    </figure>
+            
+            
+                    <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content13">
+                      <i class="fas fa-eye"></i> View Details
+            
+                    </a>
+                    <div id="inline-content13" style="display:none;">
+                      <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                      Kallyas Metalex CO.</h2>
+                      <img src="./img/projects/metalex.png" alt="" width="100%">
+                      <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                      <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                      <ul style="color: whitesmoke;">
+                        <li>Javascript</li>
+                        <li>Jquery</li>
+            
+            
+                      </ul>
+            
+                      <div style="display: flex;">
+                        <button class="btn-dark"
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                          <a href="https://metalex-company-nyc.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+            
+            
+                        <button class="btn-dark " 
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important; pointer-events: none;">
+                          <a href="https://google.com" target="__blank" >View Github</a></button>
+                      </div>
+            
+                    </div>
+            
+            
+                  </div>
+
+
+                  <div class="item">
+    
+                    <figure class="imghvr-slide-righ imghvr-fold-dow imghvr-zoom-ou imghvr-push-down">
+                      <img src="img/projects/w3school.png" alt="Project">
+            
+                      <figcaption>
+                        <br>W3schools.com - Clone
+                        <a href="https://w3school-clone-saud.netlify.app/" target="__blank">
+            
+            
+                      </figcaption>
+            
+                    </figure>
+            
+            
+                    <a class="btn-light venobox hvr-shutter-in-horizontal" data-vbtype="inline" href="#inline-content9">
+                      <i class="fas fa-eye"></i> View Details
+            
+                    </a>
+                    <div id="inline-content9" style="display:none;">
+                      <h2 style="text-align: center; color: #04c2c9; background-color: #252934; font-weight: 300;padding: 0.8rem;">
+                        W3schools.com - Clone </h2>
+                      <img src="./img/projects/w3school2.png" alt="" width="100%">
+                      <h2 style="color: #e31b6d;">Techologies Used:</h2>
+                      <!-- <p style="color: navy;">HTML 5, CSS </p> -->
+                      <ul style="color: whitesmoke;">
+                        <li>Javascript</li>
+                        <li>Jquery</li>
+            
+            
+                      </ul>
+            
+                      <div style="display: flex;">
+                        <button class="btn-dark"
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px;  display: flex !important; ">
+                          <a href="https://w3school-clone-saud.netlify.app/" target="__blank" class="veno_link">Visit Website</a></button>
+            
+            
+                        <button class="btn-dark"
+                          style="margin-left: 10px; font-size: 1rem; font-weight: 500; border-radius: 5px; display: flex !important;">
+                          View Github</button>
+                      </div>
+            
+                    </div>
+            
+            
+                  </div>
+
+          </div>
+
+      </div>
 
 
 
@@ -596,6 +1572,7 @@
 
   </main>
 
+ 
 
 
   <footer id="main-footer">
@@ -612,6 +1589,25 @@
   <!-- BS - JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js'></script>
   <script src="js/main.js"></script>
+
+  <script> 
+  // Github Disbaled Button
+
+
+    $( document ).ready(function() {
+
+      $(".projects + small").hover(function(){
+  $(this).css("display", "block");
+
+  }, function(){
+  $(this).css("display", "none");
+});
+
+    }); 
+
+  $("button.github").prop('disabled',true); 
+
+  </script>
 </body>
 
 </html>

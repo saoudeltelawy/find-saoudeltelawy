@@ -36,8 +36,6 @@ function toggleMenu()
 
 // Veno Box 
 $(document).ready(function(){
-  // $('.venobox').venobox(); 
-
 
   // Hover (Projects)
   $('.venobox').venobox({
@@ -49,6 +47,21 @@ $(document).ready(function(){
     numeratio  : true,                               // default: false
     infinigall : true,                               // default: false
 });
+
+
+
+$('.venobox_custom').venobox({
+  framewidth : '600px',                            // default: ''
+  frameheight: '400px',                            // default: ''
+  border     : '1px',                             // default: '0'
+  titleattr  : 'data-title',                       // default: 'title'
+  numeratio  : true,                               // default: false
+  infinigall : true,                               // default: false
+  share      : ['facebook', 'twitter', 'download'] // default: []
+});
+
+
+
 
 
 });
