@@ -138,10 +138,12 @@
       width: 270px;
       height: 270px;
       background: url("../img/personal/saud2.png");
-      background-position: left;
+      background-position: left left;
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #e52876; }
+      border: solid 3px #e52876;
+      background-repeat: no-repeat;
+      object-fit: fill; }
     .menu-branding .image-grayscale-10 {
       filter: grayscale(25%); }
   .menu .nav-item {
