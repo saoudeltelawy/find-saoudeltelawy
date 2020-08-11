@@ -73,14 +73,16 @@
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-      background-color: #252934; }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(135deg) translate(-6px, 6px);
-      background-color: #252934; }
+    .menu-btn.close .btn-line {
+      background-color: #e6e6e6; }
+      .menu-btn.close .btn-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: #a6a6a6; }
+      .menu-btn.close .btn-line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .btn-line:nth-child(3) {
+        transform: rotate(135deg) translate(-6px, 6px);
+        background-color: #a6a6a6; }
 
 .menu {
   position: fixed;
