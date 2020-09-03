@@ -19,24 +19,32 @@
     &.close {
       transform: rotate(180deg);
 
+
         // Make it rotate and X to Appear instead of Hamugrer Menu lines 
       .btn-line { 
+        background-color: darken($color: #fff, $amount: 10);
+
         // Line 1 - Rotate
         &:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
-          background-color: $dark-color;
+          // background-color: $dark-color;
+          background-color: darken($color: #fff, $amount: 35);
+
 
         }
   
         // Line 2 - Hide
         &:nth-child(2) {
           opacity: 0;
+          // background-color: darken($color: #fff, $amount: 10);
+
         }
   
         // Line 3 - Rotate
         &:nth-child(3) {
           transform: rotate(135deg) translate(-6px, 6px);
-          background-color: $dark-color;
+          // background-color: $dark-color;
+          background-color: darken($color: #fff, $amount: 35);
 
         }
       }
@@ -138,13 +146,21 @@
         width: 270px;
         height: 270px;
         background: url('../img/personal/saud2.png');
-        background-position: left ;
+        background-position: left left;
+        // background-position: ;
         background-size: cover;
         // On & Off both filter 
         // filter: drop-shadow(0 0 0.75rem $primary-color);
         // filter: grayscale(70%);
         border-radius: 50%;
         border: solid 3px lighten($color: $secondary-color, $amount: 3%);
+
+        // test 
+        background-repeat: no-repeat;
+        // background-position: center center;
+        object-fit: fill;
+        // object-position: 0% 0%;
+
       }
 
       .image-grayscale-10{

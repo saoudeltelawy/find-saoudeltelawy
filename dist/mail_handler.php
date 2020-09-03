@@ -11,7 +11,8 @@ if (isset($_POST['submit']))
 
   $to = 'saoud.telawy@gmail.com';
   $subject = 'Contact Submission: ' . $name;
-  $message = "The Following received Message from the Form is: \n".  $msg;
+  $message = "The Following received Message from the Form is:\r\n";
+  $message .= $msg;
   $headers = "Sent From: " . $email . "and the Sender is " . $name;
 
   mail($to, $subject, $message, $headers);
